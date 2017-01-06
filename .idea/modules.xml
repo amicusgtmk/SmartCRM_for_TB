@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmartCRMforTB.iml" filepath="$PROJECT_DIR$/.idea/modules/SmartCRMforTB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmartCRMforTB_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SmartCRMforTB_main.iml" group="SmartCRMforTB" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SmartCRMforTB_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SmartCRMforTB_test.iml" group="SmartCRMforTB" />
+    </modules>
+  </component>
+</project>
