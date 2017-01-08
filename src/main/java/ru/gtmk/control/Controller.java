@@ -23,6 +23,24 @@ public class Controller {
     public void start(Stage primaryStage){
         mView.drawPrimaryStage(primaryStage);
 
+        // Adding TopMenue
+        mView.drawTopMenue();
+        setTopMenueControl();
+
+        mView.getPrimaryStage().setOnCloseRequest(e -> {
+            e.consume();
+            exitFromProgram();
+        });
+    }
+
+    public void exitFromProgram(){
+        System.out.println("Closing program!");
+        //Some code here
+        mView.getPrimaryStage().close();
+    }
+
+    private void setTopMenueControl(){
+        mView.getTopMenueBar().getExitItem().setOnAction(e -> exitFromProgram());
     }
 
 

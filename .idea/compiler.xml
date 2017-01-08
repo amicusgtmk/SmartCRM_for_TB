@@ -18,9 +18,8 @@
         <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="SmartCRMforTB_main" target="1.5" />
-      <module name="SmartCRMforTB_test" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="SmartCRMforTB" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -15,6 +15,9 @@ public class View {
     private BorderPane mMainPane;
     private Scene mMainScene;
 
+
+    private TopMenueBar mTopMenueBar;
+
     public void drawPrimaryStage(Stage primaryStage){
         mPrimaryStage = primaryStage;
         mPrimaryStage.setTitle("SmartCRM for TB");
@@ -31,4 +34,21 @@ public class View {
         mPrimaryStage.show();
 
     }
+
+    public Stage getPrimaryStage(){
+        return mPrimaryStage;
+    }
+
+    public void drawTopMenue(){
+        mTopMenueBar = new TopMenueBar();
+        mMainPane.setTop(mTopMenueBar);
+
+    }
+
+    public TopMenueBar getTopMenueBar() {
+        return mTopMenueBar;
+    }
+
+
+
 }
