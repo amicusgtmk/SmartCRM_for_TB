@@ -14,6 +14,7 @@ public class View {
     private ScrollPane mScrollPane;
     private BorderPane mMainPane;
     private Scene mMainScene;
+    private LeftMenue mLeftMenue;
 
 
     private TopMenueBar mTopMenueBar;
@@ -45,10 +46,17 @@ public class View {
 
     }
 
+    public void drawLeftMenue(){
+        mLeftMenue = new LeftMenue();
+        mMainPane.setLeft(mLeftMenue);
+
+    }
+
     public TopMenueBar getTopMenueBar() {
         return mTopMenueBar;
     }
 
-
-
+    public LeftMenue getLeftMenue() {
+        return mLeftMenue;
+    }
 }

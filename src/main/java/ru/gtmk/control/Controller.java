@@ -27,6 +27,10 @@ public class Controller {
         mView.drawTopMenue();
         setTopMenueControl();
 
+        // Adding left menue
+        mView.drawLeftMenue();
+        setLeftMenueControl();
+
         mView.getPrimaryStage().setOnCloseRequest(e -> {
             e.consume();
             exitFromProgram();
@@ -41,6 +45,18 @@ public class Controller {
 
     private void setTopMenueControl(){
         mView.getTopMenueBar().getExitItem().setOnAction(e -> exitFromProgram());
+    }
+
+    private void setLeftMenueControl(){
+        mView.getLeftMenue().getTreeView().getSelectionModel().selectedIndexProperty().addListener(
+                (observable, oldValue, newValue )->{
+
+
+                    System.out.println(mView.getLeftMenue().getTreeView().getTreeItem(newValue.intValue()).getValue());
+
+
+                }
+        );
     }
 
 
